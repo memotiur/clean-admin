@@ -1,0 +1,321 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="description" content="">
+    <meta name="author" content="">
+
+    <title>Admin:: Dashboard</title>
+
+    <!-- Bootstrap core CSS -->
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+
+
+    <!--    <link rel="stylesheet" href="css/font-awesome.min.css">-->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+    <script src="https://unpkg.com/feather-icons"></script>
+    <script src="https://cdn.jsdelivr.net/npm/feather-icons/dist/feather.min.js"></script>
+
+
+    <link rel="stylesheet" href="css/animate.min.css">
+
+    <!-- Custom styles for this template -->
+    <link rel="stylesheet" href="css/metisMenu.min.css">
+
+    <link href="css/navbar.css" rel="stylesheet">
+    <link href="css/main.css" rel="stylesheet">
+
+    <!--    Chart Library Start-->
+
+    <script src="https://www.amcharts.com/lib/4/core.js"></script>
+    <script src="https://www.amcharts.com/lib/4/charts.js"></script>
+    <script src="https://www.amcharts.com/lib/4/themes/animated.js"></script>
+
+
+    <script src="https://www.amcharts.com/lib/4/maps.js"></script>
+    <script src="https://www.amcharts.com/lib/4/geodata/worldLow.js"></script>
+    <!--    Chart Library End-->
+
+</head>
+
+<body>
+
+<div class="d-flex" id="wrapper">
+
+    <!-- /#sidebar-wrapper -->
+    <div class="bg-light border-right sidebar" id="sidebar-wrapper">
+        <ul id="metismenu" class="side-nav">
+            <li class="profile">
+                <div class="text-center profile-pic">
+                    <img src="img/profile.jpg" class="profile-pic img-thumbnail" height="100px">
+                    <h6 class="font-weight-bold">Motiur Rahaman</h6>
+                    <p class="small-font">Admin</p>
+                </div>
+
+            </li>
+            <li class="">
+                <a href="#"><i data-feather="bell"></i> <span class="nav-label">Dashboard</span><span
+                        class="fa arrow"></span></a>
+                <ul>
+                    <li><a href="index.html">Dashboard 1</a></li>
+                    <li><a href="index2.html">Dashboard 2</a></li>
+                </ul>
+            </li>
+            <li>
+                <a href="#"><i data-feather="user"></i> <span class="nav-label">Chart</span><span
+                        class="fa arrow"></span></a>
+                <ul>
+                    <li><a href="#">Menu 2</a></li>
+                    <li><a href="#">Menu 2</a></li>
+                    <li><a href="#">Menu 2</a></li>
+                    <li><a href="#">Menu 2</a></li>
+                    <li><a href="#">Menu 2</a></li>
+                    <li><a href="#">Menu 2</a></li>
+                    <li><a href="#">Menu 2</a></li>
+
+                </ul>
+            </li>
+            <li>
+                <a href="#"><i data-feather="align-left"></i> <span class="nav-label">Table</span><span
+                        class="fa arrow"></span></a>
+                <ul>
+                    <li><a href="basic-table.html">Static table</a></li>
+                    <li><a href="#">Data Table</a></li>
+
+                </ul>
+            </li>
+            <li>
+                <a href="#"><i data-feather="align-left"></i> <span class="nav-label">Users</span><span
+                        class="fa arrow"></span></a>
+                <ul>
+                    <li><a href="#">Menu 2</a></li>
+                    <li><a href="#">Menu 2</a></li>
+                    <li><a href="#">Menu 2</a></li>
+                    <li><a href="#">Menu 2</a></li>
+                    <li><a href="#">Menu 2</a></li>
+                    <li><a href="#">Menu 2</a></li>
+                    <li><a href="#">Menu 2</a></li>
+
+                </ul>
+            </li>
+
+        </ul>
+    </div>
+    <!-- /#sidebar-wrapper -->
+
+    <!-- Page Content -->
+    <div id="page-content-wrapper">
+
+        <nav class="navbar navbar-expand-lg navbar-light bg-light border-bottom main-navbar">
+            <button class="btn btn-primary btn-sm" id="menu-toggle"><i data-feather="align-left"></i></button>
+
+            <button class="navbar-toggler btn-sm" type="button" data-toggle="collapse"
+                    data-target="#navbarSupportedContent"
+                    aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+
+                <ul class="navbar-nav ml-auto mt-2 mt-lg-0">
+
+                    <li class="nav-item dropdown">
+                        <a class="nav-link" href="#" role="button"
+                           data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                            <i class="navbar-font-color fa fa-bell">
+                                <span class="badge badge-info"><span class="red-notification">11</span></span>
+                            </i>
+                        </a>
+
+                        <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                            <a class="dropdown-item" href="#">
+                                <p class="notification-title"><i class="fa fa-smile-o text-success"></i> You have 16
+                                    messages</p>
+                                <p class="notification-time">2 Hour ago</p>
+                            </a>
+                            <div class="dropdown-divider"></div>
+                            <a class="dropdown-item" href="#">
+                                <p class="notification-title"><i class="fa fa-money text-danger"></i> Payment Declined.
+                                </p>
+                                <p class="notification-time">5 Hour ago</p>
+                            </a>
+                            <div class="dropdown-divider"></div>
+                            <a class="dropdown-item" href="#">
+                                <p class="notification-title"><i class="fa fa-universal-access text-primary"></i>
+                                    Application has been approved.</p>
+                                <p class="notification-time">8 Hour ago</p>
+                            </a>
+                            <div class="dropdown-divider"></div>
+                            <a class="dropdown-item" href="#">
+                                <p class="notification-title"><i class="fa fa-user-o text-primary"></i> New Customer
+                                    registered</p>
+                                <p class="notification-time">12 Hour ago</p>
+                            </a>
+                            <div class="dropdown-divider"></div>
+                            <a class="dropdown-item" href="#">
+                                <p class="notification-title"><i class="fa fa-envelope text-primary"></i> More
+                                    Notification</p>
+
+                            </a>
+                        </div>
+                    </li>
+
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" role="button"
+                           data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                            Admin
+                        </a>
+                        <div class="dropdown-menu logout-dropdown" aria-labelledby="navbarDropdown">
+                            <a class="dropdown-item" href="#"><i class="fa fa-user text-success"></i> Profile </a>
+                            <div class="dropdown-divider"></div>
+                            <a class="dropdown-item" href="#"><i class="fa fa-align-right text-success"></i> Signout</a>
+                        </div>
+                    </li>
+                </ul>
+            </div>
+        </nav>
+
+
+        <div class="container-fluid">
+
+            <div class="main-content">
+
+                <div class="page-header">
+                    <h4>Welcome to Dashboard</h4>
+                    <nav aria-label="">
+                        <ol class="breadcrumb">
+                            <li class="breadcrumb-item"><a href="#"><i class="fa fa-home"></i> Home</a></li>
+                            <li class="breadcrumb-item"><a href="#"><i class="fa fa-book"></i> Library</a></li>
+                            <li class="breadcrumb-item active" aria-current="page">Data</li>
+                        </ol>
+                    </nav>
+                </div>
+
+
+                <div class="row">
+
+                    <div class="col-md-12 col-lg-12">
+                        <div class="card custom-card">
+
+                            <div class="card-body">
+                                <div class="card-title">
+                                    All Orders
+                                </div>
+
+                                <div class="card-content">
+                                    <table class="table">
+                                        <thead>
+                                        <tr>
+                                            <th scope="col">#</th>
+                                            <th scope="col">First</th>
+                                            <th scope="col">Last</th>
+                                            <th scope="col">Handle</th>
+                                        </tr>
+                                        </thead>
+                                        <tbody>
+                                        <tr>
+                                            <th scope="row">1</th>
+                                            <td>Mark</td>
+                                            <td>Otto</td>
+                                            <td>@mdo</td>
+                                        </tr>
+                                        <tr>
+                                            <th scope="row">2</th>
+                                            <td>Jacob</td>
+                                            <td>Thornton</td>
+                                            <td>@fat</td>
+                                        </tr>
+                                        <tr>
+                                            <th scope="row">3</th>
+                                            <td>Larry</td>
+                                            <td>the Bird</td>
+                                            <td>@twitter</td>
+                                        </tr>
+                                        </tbody>
+                                    </table>
+
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col-md-6 col-lg-3">
+                        <div class="card custom-card">
+
+                            <div class="card-body">
+                                <div class="card-title">
+                                    All Orders
+                                </div>
+
+                                <div class="card-content">
+                                    <div class="media">
+
+                                        <i class="fa fa-lightbulb-o text-danger"></i>
+                                        <div class="media-body">
+                                            <p><strong>2562</strong></p>
+                                            <p>Lorem ipsum...</p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+
+                </div>
+
+
+
+
+
+                <div class="row">
+                    <div class="footer">
+                        Developed By:
+                    </div>
+                </div>
+
+            </div>
+
+
+        </div>
+
+    </div>
+    <!-- /#page-content-wrapper -->
+
+</div>
+<!-- /#wrapper -->
+
+<!-- Bootstrap core JavaScript -->
+<script src="js/jquery.min.js"></script>
+<script src="js/bootstrap.min.js"></script>
+
+
+<script src="js/metisMenu.min.js"></script>
+
+<script src="js/chart-data.js"></script>
+
+<!-- Menu Toggle Script -->
+<script>
+    $("#metismenu").metisMenu({
+        toggle: false,
+        preventDefault: false,
+
+    });
+
+    $("#menu-toggle").click(function (e) {
+        e.preventDefault();
+        $("#wrapper").toggleClass("toggled");
+    });
+
+    feather.replace()
+
+
+</script>
+
+</body>
+
+</html>

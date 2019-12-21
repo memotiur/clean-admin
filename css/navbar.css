@@ -1,0 +1,119 @@
+@import url('https://fonts.googleapis.com/css?family=Hind+Vadodara:400,500,700|Open+Sans:300,400,600,700,800&display=swap');
+
+body {
+    overflow-x: hidden;
+    /*    font-family: 'Open Sans', sans-serif;*/
+    font-family: 'Hind Vadodara', sans-serif;
+    font-size: .9375rem;
+    font-weight: 400;
+    color: #a7b1c2;
+    background: #F3F3F4;
+}
+a{
+    color: #3285EF;
+}
+a:hover{
+    color: #153D77;
+    text-decoration: none;
+}
+.btn-primary{
+    background: #3285EF;
+}
+#sidebar-wrapper {
+    min-height: 100vh;
+    margin-left: -15rem;
+    -webkit-transition: margin .25s ease-out;
+    -moz-transition: margin .25s ease-out;
+    -o-transition: margin .25s ease-out;
+    transition: margin .25s ease-out;
+
+    /*    transition: margin-left 0.35s ease-in-out, left 0.35s ease-in-out;*/
+    background: #242939 !important;
+    border-right: 0;
+}
+
+#sidebar-wrapper .sidebar-heading {
+    padding: 0.875rem 1.25rem;
+    font-size: 1.2rem;
+}
+
+#sidebar-wrapper #metismenu {
+    width: 15rem;
+}
+
+#page-content-wrapper {
+    min-width: 100vw;
+}
+
+#wrapper.toggled #sidebar-wrapper {
+    margin-left: 0;
+}
+
+@media (min-width: 768px) {
+    #sidebar-wrapper {
+        margin-left: 0;
+    }
+
+    #page-content-wrapper {
+        min-width: 0;
+        width: 100%;
+    }
+
+    #wrapper.toggled #sidebar-wrapper {
+        margin-left: -15rem;
+    }
+}
+
+.sidebar ul li {
+    list-style: none;
+    width: 100%;
+    padding: 10px 25px;
+}
+
+.sidebar ul li:hover {
+    background: #1F2433;
+}
+
+.sidebar ul li a {
+    color: #a7b1c2;
+    display: block;
+}
+
+.sidebar ul li a:hover {
+    color: #fff;
+    text-decoration: none;
+}
+
+.metismenu {
+    padding: 0px;
+}
+
+.metismenu .has-arrow {
+    margin-right: 0px;
+}
+
+.mm-active {
+    background: #1F2433;
+}
+
+
+.profile {
+    background: #1F2433;
+    height: 145px;
+}
+/*
+.main-navbar {
+    background: #ffffff !important;
+    color: #000 !important;
+    height: 75px !important;
+    box-shadow: 0 0 2rem 0 rgba(53, 64, 82, 0.1);
+}*/
+
+.navbar-dark .navbar-nav .nav-link {
+    color: #000 !important;
+}
+
+.navbar-expand-md .navbar-nav .dropdown-menu {
+    position: absolute;
+    margin-left: -98px;
+}

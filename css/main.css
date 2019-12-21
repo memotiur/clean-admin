@@ -1,0 +1,145 @@
+
+.font-weight-bold {
+    font-weight: 500;
+    line-height: 12px;
+}
+
+.small-font {
+    font-weight: 400;
+    font-size: 14px;
+}
+
+
+
+.profile-pic {
+    height: 75px;
+    margin: 5px;
+}
+
+.dropdown-item {
+    padding-top: 15px;
+}
+
+.notification-title {
+
+}
+
+.notification-time {
+    color: #737D85;
+    font-size: 10px;
+}
+
+.main-content {
+    padding: 10px 10px;
+}
+
+.card {
+    background-color: #ffffff;
+    background-clip: border-box;
+    border: 1px solid #f2f4f9;
+    border-radius: .25rem;
+    margin-bottom: 15px;
+}
+
+.font-sizei {
+    font-size: 45px !important;
+}
+
+.media .fa {
+    font-size: 45px;
+    padding-right: 15px;
+}
+
+.media-body {
+    padding: 10px;
+}
+
+.breadcrumb {
+    background: transparent;
+    padding: 0px;
+}
+
+.list-group-item:first-child {
+    border-top-left-radius: 0px;
+    border-top-right-radius: 0px;
+}
+
+.list-group-item {
+    border: none;
+}
+.list-group-item a {
+    color: #656F7B;
+}
+.list-group-item + .list-group-item {
+    border-radius: 0px;
+    border: none;
+    border-top: 1px solid #e1e6f1;
+}
+
+/*Chart css start*/
+#barChart {
+    height: 400px;
+    width: 100%;
+}
+
+#pieChart, #lineChart {
+
+    width: 100%;
+}
+
+.card .card-body {
+    padding-top: 20px;
+    padding-bottom: 20px;
+}
+
+.custom-card {
+    margin-bottom: 20px;
+    border: 0;
+    box-shadow: 0 8px 16px 0 rgba(162, 169, 204, .24);
+}
+
+/*
+Chart css start*/
+
+/*Timeline CSS start*/
+
+ul.timeline {
+    list-style-type: none;
+    position: relative;
+}
+ul.timeline:before {
+    content: ' ';
+    background: #3285EF;
+    display: inline-block;
+    position: absolute;
+    left: 29px;
+    width: 2px;
+    height: 100%;
+    z-index: 400;
+}
+ul.timeline > li {
+    margin: 20px 0;
+    padding-left: 20px;
+}
+ul.timeline > li:before {
+    content: ' ';
+    background: white;
+    display: inline-block;
+    position: absolute;
+    border-radius: 50%;
+    border: 2px solid #3285EF;
+    left: 20px;
+    width: 20px;
+    height: 20px;
+    z-index: 400;
+}
+
+/*Timeline CSS start*/
+
+.footer-section{
+    bottom: 0;
+    /* width: 103%; */
+    background-color: #fff;
+    margin-top: auto;
+    padding: 15px 0px;
+}
