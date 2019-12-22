@@ -21,7 +21,7 @@ a:hover{
 }
 #sidebar-wrapper {
     min-height: 100vh;
-    margin-left: -15rem;
+    margin-left: -16rem;
     -webkit-transition: margin .25s ease-out;
     -moz-transition: margin .25s ease-out;
     -o-transition: margin .25s ease-out;
@@ -38,7 +38,7 @@ a:hover{
 }
 
 #sidebar-wrapper #metismenu {
-    width: 15rem;
+    width: 16rem;
 }
 
 #page-content-wrapper {
@@ -60,7 +60,7 @@ a:hover{
     }
 
     #wrapper.toggled #sidebar-wrapper {
-        margin-left: -15rem;
+        margin-left: -16rem;
     }
 }
 
