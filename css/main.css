@@ -298,11 +298,36 @@ div.dataTables_wrapper div.dataTables_filter {
 
 /*CSS for Product Details page start*/
 .rating .fa{
-    font-size: 20px;
+    font-size: 17px;
     color: #F9BC0D;
 }
-.product-line{
+.padding-bottom{
     padding-bottom: 7px;
+}
+
+.row-space{
+    margin-top: 50px;
+}
+.row-space-10{
+    margin-top: 25px;
+}
+.list-group-item + .list-group-item {
+    border-radius: 0px;
+    border: none;
+    border-top:none;
+}
+.list-group-item:first-child {
+    border-top-left-radius: 0px;
+    border-top-right-radius: 0px;
+    padding-top: 0px;
+    padding-bottom: 0px;
+    padding-left: 0px;
+}
+.list-group-item + .list-group-item {
+    border-radius: 0px;
+    border: none;
+    border-top: none;
+    padding-left: 0px;
 }
 /*CSS for Product Details page end*/
 

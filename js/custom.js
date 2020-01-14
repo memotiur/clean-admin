@@ -1,6 +1,6 @@
 $(document).ready(function () {
     console.log("ready!");
-
+/*
 
     $(".main-content").slimScroll({
         size: '1px',
@@ -19,7 +19,7 @@ $(document).ready(function () {
         bottom:"0",
         allowPageScroll: true,
         alwaysVisible: false
-    });
+    });*/
 
     $("#metismenu").metisMenu({
         toggle: false,
