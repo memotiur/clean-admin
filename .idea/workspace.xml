@@ -32,6 +32,8 @@
     <expand />
     <select />
   </component>
+<<<<<<< HEAD
+=======
   <component name="FUSProjectUsageTrigger">
     <session id="1419999309">
       <usages-collector id="statistics.lifecycle.project">
@@ -106,6 +108,7 @@
       </usages-collector>
     </session>
   </component>
+>>>>>>> 658de9eb6be2b9b659792f493edd6b397c24f443
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
       <file pinned="false" current-in-tab="false">
@@ -250,12 +253,7 @@
     <detection-done>true</detection-done>
     <sorting>DEFINITION_ORDER</sorting>
   </component>
-  <component name="ProjectFrameBounds" extendedState="6">
-    <option name="x" value="-8" />
-    <option name="y" value="-8" />
-    <option name="width" value="1382" />
-    <option name="height" value="744" />
-  </component>
+  <component name="ProjectId" id="1WNL9Lgy7CzlLqD9tiLrHQ6ACl4" />
   <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
   <component name="ProjectView">
     <navigator proportions="" version="1">
