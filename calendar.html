@@ -1,10 +1,464 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-    <meta charset="UTF-8">
-    <title>Title</title>
+
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="description" content="">
+    <meta name="author" content="Motiur Rahaman">
+
+    <link rel="apple-touch-icon" sizes="57x57" href="img/favicon/apple-icon-57x57.png">
+    <link rel="apple-touch-icon" sizes="60x60" href="img/favicon/apple-icon-60x60.png">
+    <link rel="apple-touch-icon" sizes="72x72" href="img/favicon/apple-icon-72x72.png">
+    <link rel="apple-touch-icon" sizes="76x76" href="img/favicon/apple-icon-76x76.png">
+    <link rel="apple-touch-icon" sizes="114x114" href="img/favicon/apple-icon-114x114.png">
+    <link rel="apple-touch-icon" sizes="120x120" href="img/favicon/apple-icon-120x120.png">
+    <link rel="apple-touch-icon" sizes="144x144" href="img/favicon/apple-icon-144x144.png">
+    <link rel="apple-touch-icon" sizes="152x152" href="img/favicon/apple-icon-152x152.png">
+    <link rel="apple-touch-icon" sizes="180x180" href="img/favicon/apple-icon-180x180.png">
+    <link rel="icon" type="image/png" sizes="192x192" href="img/favicon/android-icon-192x192.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="img/favicon/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="96x96" href="img/favicon/favicon-96x96.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="img/favicon/favicon-16x16.png">
+    <link rel="manifest" href="img/favicon/manifest.json">
+    <meta name="msapplication-TileColor" content="#ffffff">
+    <meta name="msapplication-TileImage" content="/ms-icon-144x144.png">
+    <meta name="theme-color" content="#ffffff">
+
+    <title>Admin:: Blank Page</title>
+
+    <!-- Bootstrap core CSS -->
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+
+    <link rel="stylesheet" href="css/font-awesome.min.css">
+    <link rel="stylesheet" href="css/animate.min.css">
+
+    <!--    This page css start-->
+    <link rel="stylesheet" href="assets/fullcalendar/css/fullcalendar.min.css">
+    <!--    This page css end-->
+
+    <!-- Custom styles for this template -->
+    <link rel="stylesheet" href="css/metisMenu.min.css">
+
+    <link href="css/navbar.css" rel="stylesheet">
+    <link href="css/main.css" rel="stylesheet">
+
+
 </head>
+
 <body>
 
+<div class="d-flex" id="wrapper">
+
+    <!-- /#sidebar-wrapper -->
+    <div class="bg-light border-right sidebar" id="sidebar-wrapper">
+        <ul id="metismenu" class="side-nav">
+            <li class="profile">
+                <div class="text-center profile-pic">
+                    <img src="img/profile.jpg" class="profile-pic img-thumbnail" height="100px">
+                    <h6 class="font-weight-bold">Motiur Rahaman</h6>
+                    <p class="small-font">Admin</p>
+                </div>
+
+            </li>
+            <li class="">
+                <a href="#"><i class="fa fa-dashboard"></i> <span class="nav-label">Dashboard</span>
+                    <span class="fa arrow"></span>
+                </a>
+                <ul>
+                    <li><a href="index.html">Default</a></li>
+                    <li><a href="analytics.html">Analytics</a></li>
+                    <li><a href="ecommerce.html">E-Commerce</a></li>
+                    <li><a href="project.html">Project</a></li>
+                </ul>
+            </li>
+            <li>
+                <a href="#"> <i class="fa fa-list"></i> <span class="nav-label">APP</span>
+                    <span class="fa arrow"></span>
+                </a>
+                <ul>
+                    <li><a href="inbox.html">Inbox</a></li>
+                    <li><a href="chat.html">Chat</a></li>
+                </ul>
+            </li>
+            <li>
+                <a href="#"><i class="fa fa-table"></i> <span class="nav-label">Table</span><span
+                        class="fa arrow"></span></a>
+                <ul>
+                    <li><a href="basic-table.html">Static table</a></li>
+                    <li><a href="data-table.html">Data Table</a></li>
+
+                </ul>
+            </li>
+            <li>
+                <a href="#"> <i class="fa fa-edit"></i> <span class="nav-label">Form</span>
+                    <span class="fa arrow"></span>
+                </a>
+                <ul>
+                    <li><a href="basic-form.html">Basic Form</a></li>
+                    <li><a href="advance-form.html">Advance Form</a></li>
+                </ul>
+            </li>
+            <li>
+                <a href="#"> <i class="fa fa-text-height"></i> <span class="nav-label">Editor</span>
+                    <span class="fa arrow"></span>
+                </a>
+                <ul>
+                    <li><a href="ck-editor.html">Ck Editor</a></li>
+                    <li><a href="summernote.html">Summernote</a></li>
+                </ul>
+            </li>
+            <li>
+                <a href="#"> <i class="fa fa-cart-plus"></i> <span class="nav-label">UI Element</span>
+                    <span class="fa arrow"></span>
+                </a>
+                <ul>
+                    <li><a href="button.html">Button</a></li>
+                    <li><a href="alert.html">Alert</a></li>
+                    <li><a href="modal.html">Modal</a></li>
+                    <li><a href="notification.html">Notification</a></li>
+                    <li><a href="grid.html">Grid</a></li>
+                    <li><a href="tooltips.html">Tooltip</a></li>
+                    <li><a href="progress.html">Progress</a></li>
+                    <li><a href="code.html">Code</a></li>
+                </ul>
+            </li>
+            <li>
+                <a href="#"> <i class="fa fa-pie-chart"></i> <span class="nav-label">Chart</span>
+                    <span class="fa arrow"></span>
+                </a>
+                <ul>
+                    <li><a href="chart-js.html">Chart Js</a></li>
+                    <li><a href="peity-chart.html">Peity Chart</a></li>
+                    <li><a href="c3-chart.html">C3 Chart</a></li>
+                    <li><a href="morris-chart.html">Morris Chart</a></li>
+                    <li><a href="echart.html">eChart</a></li>
+                </ul>
+            </li>
+            <li>
+                <a href="gallery.html"> <i class="fa fa-image"></i> <span class="nav-label">Gallery</span></a>
+            </li>
+            <li>
+                <a href="maps.html"> <i class="fa fa-map"></i> <span class="nav-label">Maps</span></a>
+            </li>
+            <li>
+                <a href="calendar.html"> <i class="fa fa-calendar"></i> <span class="nav-label">Calendar</span></a>
+            </li>
+
+            <li>
+                <a href="#"> <i class="fa fa-cart-plus"></i> <span class="nav-label">Pages</span>
+                    <span class="fa arrow"></span>
+                </a>
+                <ul>
+                    <li><a href="404.html">404</a></li>
+                    <li><a href="500.html">500</a></li>
+                    <li><a href="sign-in.html">Sign In</a></li>
+                    <li><a href="sign-up.html">Sign up</a></li>
+                    <li><a href="invoice.html">Invoice</a></li>
+                    <li><a href="pricing-table.html">Pricing Table</a></li>
+                    <li><a href="lock-screen.html">Lock Screen</a></li>
+                    <li><a href="forget-pass.html">Forget Pass</a></li>
+                    <li><a href="maintenance.html">Maintenance</a></li>
+                </ul>
+            </li>
+
+            <li>
+                <a href="#"> <i class="fa fa-cart-plus"></i> <span class="nav-label">E-Commerce</span>
+                    <span class="fa arrow"></span>
+                </a>
+                <ul>
+                    <li><a href="product.html">Product</a></li>
+                    <li><a href="product-details.html">Product Details</a></li>
+                    <li><a href="order.html">Order</a></li>
+                    <li><a href="order-details.html">Order Details</a></li>
+                </ul>
+            </li>
+
+            <li>
+                <a href="#"> <i class="fa fa-i-cursor"></i> <span class="nav-label">Icons</span>
+                    <span class="fa arrow"></span>
+                </a>
+                <ul>
+                    <li><a href="font-awesome.html">Font Awesome icon</a></li>
+                    <li><a href="fether-icon.html">Fether Icon</a></li>
+                </ul>
+            </li>
+
+        </ul>
+    </div>
+    <!-- /#sidebar-wrapper -->
+
+    <!-- Page Content -->
+    <div id="page-content-wrapper">
+
+        <nav class="navbar navbar-expand-lg navbar-light bg-light border-bottom main-navbar">
+            <button class="btn btn-primary btn-sm" id="menu-toggle"><i data-feather="align-left"></i></button>
+
+            <button class="navbar-toggler btn-sm" type="button" data-toggle="collapse"
+                    data-target="#navbarSupportedContent"
+                    aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+
+                <ul class="navbar-nav ml-auto mt-2 mt-lg-0">
+
+                    <li class="nav-item dropdown">
+                        <a class="nav-link" href="#" role="button"
+                           data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                            <i class="navbar-font-color fa fa-bell">
+                                <span class="badge badge-primary"><span class="red-notification">11</span></span>
+                            </i>
+                        </a>
+
+                        <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                            <a class="dropdown-item" href="#">
+                                <p class="notification-title"><i class="fa fa-smile-o text-success"></i> You have 16
+                                    messages</p>
+                                <p class="notification-time">2 Hour ago</p>
+                            </a>
+                            <div class="dropdown-divider"></div>
+                            <a class="dropdown-item" href="#">
+                                <p class="notification-title"><i class="fa fa-money text-danger"></i> Payment Declined.
+                                </p>
+                                <p class="notification-time">5 Hour ago</p>
+                            </a>
+                            <div class="dropdown-divider"></div>
+                            <a class="dropdown-item" href="#">
+                                <p class="notification-title"><i class="fa fa-universal-access text-primary"></i>
+                                    Application has been approved.</p>
+                                <p class="notification-time">8 Hour ago</p>
+                            </a>
+                            <div class="dropdown-divider"></div>
+                            <a class="dropdown-item" href="#">
+                                <p class="notification-title"><i class="fa fa-user-o text-primary"></i> New Customer
+                                    registered</p>
+                                <p class="notification-time">12 Hour ago</p>
+                            </a>
+                            <div class="dropdown-divider"></div>
+                            <a class="dropdown-item" href="#">
+                                <p class="notification-title"><i class="fa fa-envelope text-primary"></i> More
+                                    Notification</p>
+
+                            </a>
+                        </div>
+                    </li>
+
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" role="button"
+                           data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                            Admin
+                        </a>
+                        <div class="dropdown-menu logout-dropdown" aria-labelledby="navbarDropdown">
+                            <a class="dropdown-item" href="#"><i class="fa fa-user text-success"></i> Profile </a>
+                            <div class="dropdown-divider"></div>
+                            <a class="dropdown-item" href="#"><i class="fa fa-align-right text-success"></i> Signout</a>
+                        </div>
+                    </li>
+                </ul>
+            </div>
+        </nav>
+
+
+        <div class="container-fluid">
+
+            <div class="main-content">
+
+                <div class="page-header">
+                    <h4>Getting started.</h4>
+                    <nav aria-label="">
+                        <ol class="breadcrumb">
+                            <li class="breadcrumb-item"><a href="index.html"><i class="fa fa-home"></i> Home</a></li>
+                            <li class="breadcrumb-item active" aria-current="page">Blank Page</li>
+                        </ol>
+                    </nav>
+                </div>
+
+                <div class="row">
+                    <div class="col-md-12">
+                        <div class="card">
+                            <div class="card-body">
+                                <div class="card-title">
+                                    <h4>Calender</h4>
+                                    <p>Open source JavaScript jQuery plugin for a full-sized, drag & drop event calendar.</p>
+
+                                </div>
+
+                                <div class="card-content">
+                                    <div id='calendar'></div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+
+
+            </div>
+
+            <div class="row footer-section">
+                <div class="col-md-12">
+                    <div class="footer">
+                        <span>Copyright 2019 © <a href="pixonlab.com" target="_blank">Pixonlab</a> All rights reserved.</span>
+                    </div>
+                </div>
+
+            </div>
+
+
+        </div>
+
+    </div>
+    <!-- /#page-content-wrapper -->
+
+</div>
+<!-- /#wrapper -->
+
+<!-- Bootstrap core JavaScript -->
+<script src="js/jquery.min.js"></script>
+<script src="js/bootstrap.min.js"></script>
+
+
+<script src="assets/feather/js/feather.min.js"></script>
+<script src="js/metisMenu.min.js"></script>
+<script src="js/jquery.slimscroll.min.js"></script>
+
+<script src="js/custom.js"></script>
+
+
+<!--This page js start-->
+
+<script type='text/javascript'
+        src='assets/fullcalendar/js/moment.min.js'></script>
+<script type='text/javascript'
+        src='assets/fullcalendar/js/fullcalendar.min.js'></script>
+
+<script>
+
+    (function () {
+        'use strict';
+        // ------------------------------------------------------- //
+        // Calendar
+        // ------------------------------------------------------ //
+        jQuery(function () {
+            // page is ready
+            jQuery('#calendar').fullCalendar(
+                {
+                themeSystem: 'bootstrap4',
+                // emphasizes business hours
+                businessHours: false,
+                defaultView: 'month',
+                // event dragging & resizing
+                editable: true,
+                // header
+                header: {
+                    center: 'title',
+                    left: 'month,agendaWeek,agendaDay,listMonth',
+                    right: 'today prev,next',
+
+                },
+
+                events: [
+                    {
+                        title: 'Barber',
+                        description: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras eu pellentesque nibh. In nisl nulla, convallis ac nulla eget, pellentesque pellentesque magna.',
+                        start: '2020-01-07',
+                        end: '2020-01-07',
+                        className: 'bg-danger text-white fc-button',
+                    },
+                    {
+                        title: 'Flight Paris',
+                        description: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras eu pellentesque nibh. In nisl nulla, convallis ac nulla eget, pellentesque pellentesque magna.',
+                        start: '2020-02-08T14:00:00',
+                        end: '2020-02-08T20:00:00',
+                        className: 'bg-info text-white fc-button',
+                        allDay: false
+                    },
+                    {
+                        title: 'Team Meeting',
+                        description: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras eu pellentesque nibh. In nisl nulla, convallis ac nulla eget, pellentesque pellentesque magna.',
+                        start: '2020-03-10T13:00:00',
+                        end: '2020-03-10T16:00:00',
+                        className: 'bg-danger text-white fc-button',
+                        allDay: false
+                    },
+                    {
+                        title: 'Meeting',
+                        description: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras eu pellentesque nibh. In nisl nulla, convallis ac nulla eget, pellentesque pellentesque magna.',
+                        start: '2020-02-12',
+                        className: 'bg-primary text-white fc-button',
+                    },
+                    {
+                        title: 'Conference',
+                        description: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras eu pellentesque nibh. In nisl nulla, convallis ac nulla eget, pellentesque pellentesque magna.',
+                        start: '2020-02-13',
+                        end: '2020-02-15',
+                        className: 'bg-info text-white fc-button',
+                    },
+                    {
+                        title: 'Baby Shower',
+                        description: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras eu pellentesque nibh. In nisl nulla, convallis ac nulla eget, pellentesque pellentesque magna.',
+                        start: '2020-02-13',
+                        end: '2020-02-14',
+                        className: 'bg-danger text-white fc-button',
+                    },
+                    {
+                        title: 'Birthday',
+                        description: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras eu pellentesque nibh. In nisl nulla, convallis ac nulla eget, pellentesque pellentesque magna.',
+                        start: '2019-09-13',
+                        end: '2019-09-14',
+                        className: 'bg-danger text-white fc-button',
+                    },
+                    {
+                        title: 'Restaurant',
+                        description: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras eu pellentesque nibh. In nisl nulla, convallis ac nulla eget, pellentesque pellentesque magna.',
+                        start: '2019-10-15T09:30:00',
+                        end: '2019-10-15T11:45:00',
+                        className: 'bg-danger text-white fc-button',
+                        allDay: false
+                    },
+                    {
+                        title: 'Dinner',
+                        description: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras eu pellentesque nibh. In nisl nulla, convallis ac nulla eget, pellentesque pellentesque magna.',
+                        start: '2020-02-15T20:00:00',
+                        end: '2020-02-15T22:30:00',
+                        className: 'bg-danger text-white fc-button',
+                        allDay: false
+                    },
+                    {
+                        title: 'Shooting',
+                        description: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras eu pellentesque nibh. In nisl nulla, convallis ac nulla eget, pellentesque pellentesque magna.',
+                        start: '2020-02-25',
+                        end: '2020-02-25',
+                        className: 'bg-info text-white fc-button',
+                    },
+                    {
+                        title: 'Go Space :)',
+                        description: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras eu pellentesque nibh. In nisl nulla, convallis ac nulla eget, pellentesque pellentesque magna.',
+                        start: '2020-01-27',
+                        end: '2020-01-27',
+                        className: 'bg-danger text-white fc-button',
+                    },
+                    {
+                        title: 'Dentist',
+                        description: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras eu pellentesque nibh. In nisl nulla, convallis ac nulla eget, pellentesque pellentesque magna.',
+                        start: '2020-01-29T11:30:00',
+                        end: '2020-01-29T012:30:00',
+                        className: 'bg-info text-white fc-button',
+                        allDay: false
+                    }
+                ]
+            })
+        });
+
+    })(jQuery);
+
+</script>
+<!--This page js end-->
+
+
 </body>
+
 </html>
