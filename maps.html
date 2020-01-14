@@ -17,7 +17,7 @@
     <link rel="apple-touch-icon" sizes="144x144" href="img/favicon/apple-icon-144x144.png">
     <link rel="apple-touch-icon" sizes="152x152" href="img/favicon/apple-icon-152x152.png">
     <link rel="apple-touch-icon" sizes="180x180" href="img/favicon/apple-icon-180x180.png">
-    <link rel="icon" type="image/png" sizes="192x192"  href="img/favicon/android-icon-192x192.png">
+    <link rel="icon" type="image/png" sizes="192x192" href="img/favicon/android-icon-192x192.png">
     <link rel="icon" type="image/png" sizes="32x32" href="img/favicon/favicon-32x32.png">
     <link rel="icon" type="image/png" sizes="96x96" href="img/favicon/favicon-96x96.png">
     <link rel="icon" type="image/png" sizes="16x16" href="img/favicon/favicon-16x16.png">
@@ -273,37 +273,58 @@
                 </div>
 
                 <div class="row">
-                    <div class="col-md-8">
+                    <div class="col-md-6">
                         <div class="card">
                             <div class="card-body">
                                 <div class="card-title">
-                                    Content here
-
+                                    <h6 class="card-headline">Basic Map</h6>
+                                    <small>This is an example of Google default map style </small>
                                 </div>
 
                                 <div class="card-content">
-
+                                    <div id="googleMap"></div>
                                 </div>
                             </div>
                         </div>
 
                     </div>
-                    <div class="col-md-4">
+                    <div class="col-md-6">
                         <div class="card">
                             <div class="card-body">
                                 <div class="card-title">
-                                    Content here
+                                    <h6 class="card-headline">Satellite Map</h6>
+                                    <small>Change Javascript <span class="text-danger"> mapTypeId: 'satellite'</span></small>
 
                                 </div>
 
                                 <div class="card-content">
-
+                                    <div id="googleMap2"></div>
                                 </div>
                             </div>
                         </div>
 
                     </div>
 
+                </div>
+
+
+
+                <div class="row">
+                    <div class="col-md-12">
+                        <div class="card">
+                            <div class="card-body">
+                                <div class="card-title">
+                                    <h6 class="card-headline">Terrain Map</h6>
+                                    <small>This is an example of Terrain map style </small>
+                                </div>
+
+                                <div class="card-content">
+                                    <div id="googleMap3"></div>
+                                </div>
+                            </div>
+                        </div>
+
+                    </div>
                 </div>
 
 
@@ -338,6 +359,54 @@
 
 <script src="js/custom.js"></script>
 
+<!--This page JS Start-->
+<script async defer
+        src="https://maps.googleapis.com/maps/api/js?key=AIzaSyA5JZKJVhlJhu1c5jEY5kV87DaJP7Bwi3g&callback=initialize"></script>
+
+<script>
+    function initialize() {
+        var mapOptions = {
+            zoom: 15,
+            scrollwheel: false,
+            center: new google.maps.LatLng(23.752621, 90.3801068)
+        };
+
+        var map = new google.maps.Map(document.getElementById('googleMap'),
+            mapOptions);
+
+        //Satellite map
+        var mapOptions = {
+            zoom: 15,
+            scrollwheel: false,
+            center: new google.maps.LatLng(23.752621, 90.3801068),
+            mapTypeId: 'satellite'
+        };
+
+        var map = new google.maps.Map(document.getElementById('googleMap2'),
+            mapOptions);
+
+        //Terrain map
+        var mapOptions = {
+            zoom: 15,
+            scrollwheel: false,
+            center: new google.maps.LatLng(23.752621, 90.3801068),
+            mapTypeId: 'terrain'
+        };
+
+        var map = new google.maps.Map(document.getElementById('googleMap3'),
+            mapOptions);
+
+
+        var marker = new google.maps.Marker({
+            position: map.getCenter(),
+            animation: google.maps.Animation.BOUNCE,
+            //icon: 'img/map-marker.png',
+            map: map
+        });
+    }
+</script>
+
+<!--This page JS End-->
 
 </body>
 

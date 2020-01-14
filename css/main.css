@@ -234,10 +234,48 @@ div.dataTables_wrapper div.dataTables_filter {
     border-radius: 20px;
 }
 .btn {
-    padding: 0.230rem 0.65rem;
     border-radius: 2px;
-    line-height: 1.4;
 }
+.button-group .btn{
+    margin: 5px;
+}
+
+.btn-success:not(:disabled):not(.disabled).active, .btn-success:not(:disabled):not(.disabled):active, .show>.btn-success.dropdown-toggle {
+    color: #fff;
+    background-color: #2bb683;
+    border-color: #29ab7b;
+}
+.btn-success:hover {
+    color: #fff;
+    background-color: #2ec08a;
+    border-color: #2bb683;
+}
+.btn-warning {
+    color: #ffffff;
+    background-color: #ffc107;
+    border-color: #ffc107;
+}
+.btn-warning:hover {
+    color: #ffffff;
+}
+
+.btn-outline-warning:hover {
+    color: #ffffff;
+}
+.btn-danger {
+    color: #ffffff;
+    background-color: #fa6767;
+    border-color: #fa6767;
+}
+.btn-danger:hover {
+    color: #ffffff;
+    background-color: #F94242;
+    border-color: #F94242;
+}
+.btn-outline-danger:hover {
+    border-color: #F94242;
+}
+
 
 /*CSS for Calender page end*/
 
@@ -248,5 +286,24 @@ div.dataTables_wrapper div.dataTables_filter {
 }
 
 /*CSS for Alert page end*/
+
+
+/*CSS for Map page start*/
+#googleMap,#googleMap2,#googleMap3{
+    height: 350px;
+}
+/*CSS for Map page end*/
+
+
+
+/*CSS for Product Details page start*/
+.rating .fa{
+    font-size: 20px;
+    color: #F9BC0D;
+}
+.product-line{
+    padding-bottom: 7px;
+}
+/*CSS for Product Details page end*/
 
 
