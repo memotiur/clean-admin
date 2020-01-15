@@ -1,7 +1,7 @@
 $(document).ready(function () {
     console.log("ready!");
-
 /*
+
     $(".main-content").slimScroll({
         size: '1px',
         width: '100%',

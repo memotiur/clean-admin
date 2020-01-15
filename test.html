@@ -1,0 +1,170 @@
+// ager order ta sales
+
+
+<script type="text/javascript">
+
+    //method for display cart data
+    function salesDisplayCart() {
+        console.log("test cartd");
+        var noImage = '<?php echo asset('
+        storage / app / public
+        /noimage.jpg')?>';
+        var url = '{{asset("storage/app/public/product_image/")}}';
+        //console.log(noImage);
+        var cartArray = salesCart.listCart();
+        var output = "";
+        for (var i in cartArray) {
+            output += '<input type="hidden" value="' + cartArray[i].name + '" name="name[]"><input type="hidden" value="' + cartArray[i].product_id + '" name="product_id[]"><input type="hidden" value="' + cartArray[i].price + '" name="price[]"><input type="hidden" value="' + cartArray[i].count + '" name="qty[]"><input type="hidden" value="' + cartArray[i].unit + '" name="unit[]"><input type="hidden" value="' + cartArray[i].mrp + '" name="purches[]">';
+
+
+            output += '<div class="row cartbox">'
+                + '<div class="col-md-2 col-sm-2"><span class="arrow" onclick="QtyPlus(' + cartArray[i].product_id + ',\'' + cartArray[i].name + '\',\'' + cartArray[i].image + '\',' + cartArray[i].price + ',\'' + cartArray[i].unit + '\',' + cartArray[i].mrp + ')"><i class="fa fa-chevron-up" aria-hidden="true"></i></span><input type="number" name="" class="cart-qty" value="' + cartArray[i].count + '" onblur="countableValue(' + cartArray[i].product_id + ',this.value,\'' + cartArray[i].name + '\',\'' + cartArray[i].image + '\',' + cartArray[i].price + ',\'' + cartArray[i].unit + '\',' + cartArray[i].mrp + ')"><span class="arrow" onclick="QtyMinus(' + cartArray[i].product_id + ',\'' + cartArray[i].name + '\',\'' + cartArray[i].image + '\',' + cartArray[i].price + ',\'' + cartArray[i].unit + '\',' + cartArray[i].mrp + ')"><i class="fa fa-chevron-down" aria-hidden="true"></i></span></div>'
+                + '<div class="col-md-8 col-sm-8" style="padding: 0px;">';
+            if (cartArray[i].image == "") {
+                output += '<img src="' + noImage + '" height="50" alt="Product Image">';
+            } else {
+                output += '<img src="' + url + cartArray[i].image + '" height="50" alt="Product Image">';
+            }
+            //shoppingCart.totalCart()
+
+
+            output += '<div class="cartbox-info"><p class="cart-product">' + cartArray[i].name + '</p><p class="cart-unit">' + cartArray[i].unit + ' </p><p class="cart-price">৳ ' + salesCart.getQtyPrice(cartArray[i].name) + '</p></div></div>'
+                + '<div class="col-md-2 col-sm-2"><span class="cart-cross" onclick="crossItem(\'' + cartArray[i].name + '\')" data-name="' + cartArray[i].name + '"><i class="fa fa-times" aria-hidden="true"></i></span></div>'
+                + '</div>';
+        }
+
+        $('#cart_container').html(output);
+        $('#countId').html(salesCart.countItem())
+        $('#itemCount').html(salesCart.countItem() + " ITEMS")
+        $('#totalItemPrice').html('৳ ' + salesCart.totalCart())
+        $('#allTotal').html('৳ ' + salesCart.totalCart())
+
+        /*  $('.total-cart').html(shoppingCart.totalCart());
+          $('.total-count').html(shoppingCart.totalCount());*/
+    }
+
+
+    function clearCart() {
+        salesCart.clearCart();
+    }
+
+
+    function crossItem(name) {
+        salesCart.removeItemFromCartAll(name);
+        salesDisplayCart();
+        reloadCartValue();
+    }
+
+
+    $(document).ready(function () {
+        salesDisplayCart();
+        //clearCart();
+    });
+
+</script>
+
+
+<!--start quick list -->
+<div id="quick_list_container">
+    <div class="quick_list_contianer_header">
+        <span><i class="fa fa-briefcase" aria-hidden="true"></i> <span id="countId">0</span> ITEMS</span>
+        <button type="button" id="quick_close">Close</button>
+    </div>
+
+    {{Form::open(['route'=>['wmm.send.product',$prefix],'method'=>'POST'])}}
+    <div id="cart_container">
+
+    </div>
+
+    <div class="cart-footer">
+
+        <h4 style="float: left;color: #F74922;">Total <span id="allTotal">0</span></h4>
+
+        <button id="submitRequsition" type="submit" class="btn btn-primary" style="padding: 10px 20px;float: right;">
+            CheckOut
+        </button>
+    </div>
+    {{Form::close()}}
+
+    <!--start row -->
+    <!-- <div class="row cartbox">
+      <div class="col-md-2 col-sm-2">
+        <span class="arrow"><i class="fa fa-angle-up" aria-hidden="true"></i></span>
+        <input type="number" name="" class="cart-qty" value="1">
+        <span class="arrow"><i class="fa fa-angle-down" aria-hidden="true"></i></span>  
+      </div>
+      <div class="col-md-8 col-sm-8" style="padding: 0px;">
+        <img src="{{asset('storage/app/public/noimage.jpg')}}" height="50" alt="Product Image">
+        <div class="cartbox-info">
+          <p class="cart-product">product Name here</p>
+          <p class="cart-unit">unit </p>
+          <p class="cart-price">৳ 200</p>
+        </div>
+      </div>
+    
+      <div class="col-md-2 col-sm-2">
+        <span class="cart-cross"><i class="fa fa-times" aria-hidden="true"></i></span>
+      </div>
+    </div> -->
+    <!--end row -->
+
+</div>
+<!--end quick list -->
+
+
+<!--start quick bag list -->
+<div id="item-container">
+    <a href="javascript:void(0)" id="expendContainer" class="item-header-link">
+        <div class="item-header">
+            <h3><i class="fa fa-briefcase" aria-hidden="true"></i></h3>
+            <span id="itemCount"> 0 Items</span>
+        </div>
+    </a>
+    <p id="totalItemPrice"></p>
+</div>
+<!--end quick bag list -->
+
+
+<script type="text/javascript">
+
+    $(document).ready(function () {
+        let quickElement = $('#quick_list_container');
+        $("#expendContainer").on('click', function () {
+            quickElement.show();
+        });
+
+        $("#quick_close").on('click', function () {
+            quickElement.hide();
+        });
+
+    });
+
+
+    //submitRequsition
+
+    $(document).ready(function () {
+        $("#submitRequsition").on("click", function () {
+            $.ajaxSetup({
+                headers: {
+                    'X-CSRF-TOKEN': $('meta[name="csrf-token"]').attr('content')
+                }
+            });
+            var dataJson = JSON.parse(sessionStorage.getItem('shoppingCart'));
+            /*      console.log("send...");
+                  console.log(dataJson);*/
+            var dataString = {data: dataJson};
+            //console.log(dataString);
+            $.ajax({
+                type: "get",
+                url: "{{url($prefix.'/submit/requisition')}}",
+                data: dataString,
+                success: function (data) {
+                    console.log(data);
+                }
+            });
+        });
+
+    })
+
+
+</script>
