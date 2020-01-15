@@ -1,3 +1,7 @@
+body {
+    color: #495057;
+}
+
 h4 {
     color: #495057;
 }
@@ -157,6 +161,13 @@ p {
 
 .card-headline {
     color: #4a4a4a;
+    font-weight: 600;
+}
+
+.headline {
+    color: #4a4a4a;
+    font-weight: 600;
+    padding: 7px 0px;
 }
 
 /*Data table css start*/
@@ -233,28 +244,33 @@ div.dataTables_wrapper div.dataTables_filter {
 .btn-pill {
     border-radius: 20px;
 }
+
 .btn {
     border-radius: 2px;
 }
-.button-group .btn{
+
+.button-group .btn {
     margin: 5px;
 }
 
-.btn-success:not(:disabled):not(.disabled).active, .btn-success:not(:disabled):not(.disabled):active, .show>.btn-success.dropdown-toggle {
+.btn-success:not(:disabled):not(.disabled).active, .btn-success:not(:disabled):not(.disabled):active, .show > .btn-success.dropdown-toggle {
     color: #fff;
     background-color: #2bb683;
     border-color: #29ab7b;
 }
+
 .btn-success:hover {
     color: #fff;
     background-color: #2ec08a;
     border-color: #2bb683;
 }
+
 .btn-warning {
     color: #ffffff;
     background-color: #ffc107;
     border-color: #ffc107;
 }
+
 .btn-warning:hover {
     color: #ffffff;
 }
@@ -262,23 +278,24 @@ div.dataTables_wrapper div.dataTables_filter {
 .btn-outline-warning:hover {
     color: #ffffff;
 }
+
 .btn-danger {
     color: #ffffff;
     background-color: #fa6767;
     border-color: #fa6767;
 }
+
 .btn-danger:hover {
     color: #ffffff;
     background-color: #F94242;
     border-color: #F94242;
 }
+
 .btn-outline-danger:hover {
     border-color: #F94242;
 }
 
-
 /*CSS for Calender page end*/
-
 
 /*CSS for Alert page start*/
 .alert {
@@ -287,35 +304,38 @@ div.dataTables_wrapper div.dataTables_filter {
 
 /*CSS for Alert page end*/
 
-
 /*CSS for Map page start*/
-#googleMap,#googleMap2,#googleMap3{
+#googleMap, #googleMap2, #googleMap3 {
     height: 350px;
 }
+
 /*CSS for Map page end*/
 
-
-
 /*CSS for Product Details page start*/
-.rating .fa{
-    font-size: 17px;
+.rating .fa {
+    font-size: 15px;
     color: #F9BC0D;
 }
-.padding-bottom{
+
+.padding-bottom {
     padding-bottom: 7px;
 }
 
-.row-space{
+.row-space {
     margin-top: 50px;
 }
-.row-space-10{
+
+.row-space-10 {
     margin-top: 25px;
 }
+
 .list-group-item + .list-group-item {
     border-radius: 0px;
     border: none;
-    border-top:none;
+    border-top: none;
+    padding: 3px 0px;
 }
+
 .list-group-item:first-child {
     border-top-left-radius: 0px;
     border-top-right-radius: 0px;
@@ -323,12 +343,69 @@ div.dataTables_wrapper div.dataTables_filter {
     padding-bottom: 0px;
     padding-left: 0px;
 }
+
 .list-group-item + .list-group-item {
     border-radius: 0px;
     border: none;
     border-top: none;
     padding-left: 0px;
 }
+
+.search-box .form-control {
+    padding-left: 2.375rem;
+    border-radius: 20px;
+}
+
+.search-box .form-control-feedback {
+    position: absolute;
+    z-index: 2;
+    display: block;
+    width: 2.375rem;
+    height: 2.375rem;
+    line-height: 2.375rem;
+    text-align: center;
+    pointer-events: none;
+    color: #aaa;
+}
+
+.product-title {
+    font-size: 18px;
+}
+
+.page-link {
+    position: relative;
+    display: block;
+    padding: .5rem .6rem;
+    margin-left: 5px;
+    line-height: 0.8;
+    color: #007bff;
+    background-color: #fff;
+    border: none;
+    border-radius: 20px;
+}
+
+.page-link:hover {
+    border-radius: 20px !important;
+}
+
+.list-group .fa {
+    font-size: 10px;
+}
+
 /*CSS for Product Details page end*/
+
+/*CSS for Modal Page Start*/
+.modal-header {
+    padding: 0.7rem 1rem;
+    border-bottom: 1px solid #f3f9ff;
+}
+/*CSS for Modal Page End*/
+
+
+/*CSS for PeityJs Page Start*/
+.donut{
+    width: 200px;
+}
+/*CSS for PeityJs Page End*/
 
 

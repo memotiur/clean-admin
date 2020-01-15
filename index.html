@@ -22,7 +22,12 @@
 
     <link href="css/navbar.css" rel="stylesheet">
     <link href="css/main.css" rel="stylesheet">
-
+    <style>
+        .peity{
+            width: 100%;
+            height: 88px;
+        }
+    </style>
 
 </head>
 
@@ -377,7 +382,7 @@
                                 </div>
 
                                 <div class="card-content">
-                                    <canvas id="pieChart"></canvas>
+                                    <span class="updating-chart">5,3,9,6,5,9,7,3,5,2,5,3,9,6,5,9,7,3,5,2</span>
                                 </div>
                             </div>
                         </div>
@@ -390,10 +395,11 @@
                                 </div>
 
                                 <div class="card-content">
-                                    <canvas id="barChart"></canvas>
+                                    <canvas id="pieChart"></canvas>
                                 </div>
                             </div>
                         </div>
+
                     </div>
                 </div>
 
@@ -697,6 +703,14 @@
         data: data,
     });
 </script>
+
+
+<!--This page Js start-->
+<script src="assets/peityChart/js/jquery.peity.min.js"></script>
+<script src="js/peity-js-data.js"></script>
+
+<!--This page Js end-->
+
 
 </body>
 
