@@ -294,6 +294,9 @@ div.dataTables_wrapper div.dataTables_filter {
 .btn-outline-danger:hover {
     border-color: #F94242;
 }
+.btn-pill{
+    border-radius: 2px !important;
+}
 
 /*CSS for Calender page end*/
 
@@ -399,13 +402,40 @@ div.dataTables_wrapper div.dataTables_filter {
     padding: 0.7rem 1rem;
     border-bottom: 1px solid #f3f9ff;
 }
+
 /*CSS for Modal Page End*/
 
-
 /*CSS for PeityJs Page Start*/
-.donut{
+.donut {
     width: 200px;
 }
+
 /*CSS for PeityJs Page End*/
+
+/*CSS for Gallery Page Start*/
+.img-thumbnail {
+    padding: 0px;
+    border: none;
+
+}
+
+/*CSS for Gallery Page End*/
+
+/*CSS for Table Page Start*/
+.table thead th {
+    border-bottom: 1px solid #f0f1f3;
+}
+
+.table th {
+    border-top: none;
+}
+
+.table td {
+    border-bottom: 1px solid #f0f1f3;
+}
+.table {
+    color: #6e7071;
+}
+/*CSS for Table Page End*/
 
 

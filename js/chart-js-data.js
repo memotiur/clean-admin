@@ -1,4 +1,3 @@
-
 //Bar Chart start
 var ctx = document.getElementById('chart1').getContext('2d');
 var chart = new Chart(ctx, {
@@ -7,12 +6,12 @@ var chart = new Chart(ctx, {
 
     // The data for our dataset
     data: {
-        labels: ['January', 'February', 'March', 'April', 'May', 'June', 'July'],
+        labels: ['January', 'February', 'March', 'April', 'May', 'June', 'July', 'August', 'September', 'October', 'November', 'December'],
         datasets: [{
-            label: 'My First dataset',
+            label: 'Monthly Sell',
             backgroundColor: 'rgb(255, 99, 132)',
             borderColor: 'rgb(255, 99, 132)',
-            data: [0, 10, 5, 2, 20, 30, 45]
+            data: [0, 10, 5, 2, 20, 30, 45, 27, 41, 13, 26, 57]
         }]
     },
 
@@ -133,7 +132,7 @@ var options = {
     scales: {
         yAxes: [{
             ticks: {
-                beginAtZero:true
+                beginAtZero: true
             }
         }]
     }
